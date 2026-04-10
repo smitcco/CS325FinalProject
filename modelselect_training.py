@@ -94,6 +94,7 @@ feature_names       = list(X.columns)
 importances         = rf_model.feature_importances_
 feature_importances = pd.Series(importances, index=feature_names).sort_values(ascending=False)
 
+" Model Performance/Prediction Plotting "
 plt.figure(figsize=(10, 5))
 feature_importances.plot(kind='bar', color='steelblue', edgecolor='black')
 plt.xlabel('Feature', fontsize=12)
@@ -103,6 +104,7 @@ plt.xticks(rotation=45, ha='right')
 plt.tight_layout()
 plt.show()
 
+" Feature selection display "
 print("\nTop 5 most important features:")
 print(feature_importances.head(5).to_string())
 
