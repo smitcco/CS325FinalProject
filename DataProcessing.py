@@ -1,6 +1,13 @@
 import pandas as pd
 from sklearn.preprocessing import StandardScaler
 
+"""
+Thomas Youse
+Data Preprocessing and Cleaning 
+April 18th, 2026
+"""
+
+
 # Load the datasets
 train_df = pd.read_csv('train.csv')
 test_df = pd.read_csv('test.csv')
