@@ -94,7 +94,9 @@ plt.ylabel('Importance', fontsize=12)
 plt.title('Random Forest - Feature Importances (Marathon)', fontsize=14)
 plt.xticks(rotation=45, ha='right')
 plt.tight_layout()
-plt.show()
+
+" Save plot as a PNG "
+plt.savefig('results/feature_importances.png', dpi=150, bbox_inches='tight')
 
 """ Feature selection display
 (print top 5 features - strongest predictors of marathon finish time) """
