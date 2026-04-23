@@ -16,16 +16,6 @@ Model Selection and Training
 April 10th, 2026
 """
 
-""" 
-
-Feature importance handoff:
-
-    Save trained models with:
-        # import joblib
-        joblib.dump(lr_model, 'lr_model.pkl')
-        joblib.dump(rf_model, 'rf_model.pkl')
-        (James can then load directly for final eval with no retraining)
-"""
 
 " Read in preprocessed file "
 df = pd.read_csv('train_processed.csv')

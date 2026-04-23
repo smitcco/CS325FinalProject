@@ -19,6 +19,14 @@ April 23, 2026
 lr_model = joblib.load('lr_model.pkl')
 rf_model = joblib.load('rf_model.pkl')
 
+# Previous validation split 
+df = pd.read_csv('train_processed.csv')
+X = df.drop(columns=['actual_finish_time_minutes'])
+y = df['actual_finish_time_minutes'].values
+X_train, X_val, y_train, y_val = train_test_split(
+    X, y, test_size=0.2, random_state=42
+)
+
 # Baseline prediction: Computes average for a baseline of comparison
 baseline_pred = np.full(len(y_val), np.mean(y_train))
 
