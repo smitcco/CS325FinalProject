@@ -42,7 +42,7 @@ importance_df = pd.DataFrame({
     "importance_std": perm.importances_std
 }).sort_values("importance_mean", ascending=False)
 
-importance_df.to_csv("results/permutation_feature_importance.csv", index=False)
+importance_df.to_csv("csv/permutation_feature_importance.csv", index=False)
 
 # top 10 features
 top_features = importance_df.head(10)["feature"].tolist()
@@ -86,7 +86,7 @@ for name, model in models.items():
     })
 
 results_df = pd.DataFrame(results)
-results_df.to_csv("results/feature_selection_model_comparison.csv", index=False)
+results_df.to_csv("csv/feature_selection_model_comparison.csv", index=False)
 
 print("\nTop 10 selected features:")
 print(top_features)
