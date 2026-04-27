@@ -15,7 +15,7 @@ April 27, 2026
 """
 
 # load processed dataset and split features from target
-df = pd.read_csv("train_processed.csv")
+df = pd.read_csv("csv/train_processed.csv")
 X = df.drop(columns=["actual_finish_time_minutes"])
 y = df["actual_finish_time_minutes"]
 

@@ -19,7 +19,7 @@ April 10th, 2026
 
 
 " Read in preprocessed file "
-df = pd.read_csv('train_processed.csv')
+df = pd.read_csv('csv/train_processed.csv')
 
 np.random.seed(42)
 

@@ -20,7 +20,7 @@ lr_model = joblib.load('lr_model.pkl')
 rf_model = joblib.load('rf_model.pkl')
 
 # Previous validation split 
-df = pd.read_csv('train_processed.csv')
+df = pd.read_csv('csv/train_processed.csv')
 X = df.drop(columns=['actual_finish_time_minutes'])
 y = df['actual_finish_time_minutes'].values
 X_train, X_val, y_train, y_val = train_test_split(

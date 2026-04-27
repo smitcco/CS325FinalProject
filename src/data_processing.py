@@ -9,8 +9,8 @@ April 18th, 2026
 
 
 # Load the datasets
-train_df = pd.read_csv('train.csv')
-test_df = pd.read_csv('test.csv')
+train_df = pd.read_csv('csv/train.csv')
+test_df = pd.read_csv('csv/test.csv')
 
 
 # Remove missing/redundant data
@@ -101,8 +101,8 @@ test_df = pd.get_dummies(test_df, columns=nominal_cols, drop_first=True)
 train_df, test_df = train_df.align(test_df, join='left', axis=1, fill_value=0)
 
 
-train_df.to_csv('train_processed.csv', index=False)
-test_df.to_csv('test_processed.csv', index=False)
+train_df.to_csv('csv/train_processed.csv', index=False)
+test_df.to_csv('csv/test_processed.csv', index=False)
 
 
 # Checks for missing values and data types after processing
