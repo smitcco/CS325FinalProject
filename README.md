@@ -4,6 +4,6 @@ A team effort to create a ML model(s) as our CS325 Final Project.
         - prior info includes previous running mileage, previous running PRs, effort level, etc...
 
     To run the model:
-        python3 run_model.py 
+        python3 src/run_model.py 
 
 
