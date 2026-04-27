@@ -5,15 +5,15 @@ import runpy
 matplotlib.use('Agg')
 
 print("\n-- Step 1: Data Cleaning/Preprocessing -- ")
-runpy.run_path('src/data_processing.py')
+runpy.run_path('data_processing.py')
 
 print("\n-- Step 2: Model Selection/Training -- ")
-runpy.run_path('src/model_select_training.py')
+runpy.run_path('model_select_training.py')
 
 print("\n-- Step 3: Feature Selection -- ")
-runpy.run_path('src/feature_selection.py')
+runpy.run_path('feature_selection.py')
 
 print("\n-- Step 4: Model Eval -- ")
-runpy.run_path('src/model_evaluation.py')
+runpy.run_path('model_evaluation.py')
 
 print("\nRuns done. Results located in results/")
