@@ -24,7 +24,7 @@ X_train, X_val, y_train, y_val = train_test_split(
     X, y, test_size=0.2, random_state=42
 )
 
-rf_model = joblib.load("rf_model.pkl")
+rf_model = joblib.load("pkl/rf_model.pkl")
 
 perm = permutation_importance(
     rf_model,

@@ -16,8 +16,8 @@ April 23, 2026
 """
 
 # Load saved models
-lr_model = joblib.load('lr_model.pkl')
-rf_model = joblib.load('rf_model.pkl')
+lr_model = joblib.load('pkl/lr_model.pkl')
+rf_model = joblib.load('pkl/rf_model.pkl')
 
 # Previous validation split 
 df = pd.read_csv('csv/train_processed.csv')

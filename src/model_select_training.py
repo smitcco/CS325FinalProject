@@ -49,8 +49,8 @@ print(f"Linear Regression - Train MAE: {train_mae_lr:.2f} min | Val MAE: {val_ma
 rf_model = RandomForestRegressor(n_estimators=100, random_state=42)
 rf_model.fit(X_train, y_train)
 
-joblib.dump(lr_model, "lr_model.pkl") # for use with feature selection
-joblib.dump(rf_model, "rf_model.pkl") # for use with feature selection
+joblib.dump(lr_model, "pkl/lr_model.pkl") # for use with feature selection
+joblib.dump(rf_model, "pkl/rf_model.pkl") # for use with feature selection
 
 " training and validation set predictions "
 y_train_pred_rf = rf_model.predict(X_train)
