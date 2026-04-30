@@ -5,6 +5,8 @@ import runpy
 import os
 matplotlib.use('Agg')
 
+" NOTE: All scripts rely on the project root as the working directory 
+        Always run the model from th project root "
 os.chdir(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 print("\n-- Step 1: Data Cleaning/Preprocessing -- ")

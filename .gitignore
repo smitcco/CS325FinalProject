@@ -1,7 +1,6 @@
-*.csv
-*.pkl
-*.png
-!results/*.png
+csv/*.csv
+pkl/*.pkl
+results/*.png
 __pycache__/ 
 .mypy_cache/
 *.pyc 
