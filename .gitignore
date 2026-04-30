@@ -3,4 +3,5 @@ pkl/*.pkl
 results/*.png
 __pycache__/ 
 .mypy_cache/
-*.pyc 
+*.pyc
+venv/
