@@ -1,2 +1,2 @@
 # Future TODO
-    - How does inter-marathon training gaps affect predicted/actual finish time relative to th model's ~4 minute MAE.
+    - How do inter-marathon training gaps affect the predicted/actual finish time relative to the model's ~3 minute MAE?
