@@ -5,9 +5,9 @@ A team ML project predicting a runner's marathon finish time given prior trainin
 
 ## Setup 
     pip install -r requirements.txt
-    Download from the 'train' and 'test' csv files from Kaggle 'Run Club Marathon Performance Dataset'. 
 
 ## Data 
+    Download the 'train' and 'test' csv files from Kaggle 'Run Club Marathon Performance Dataset'. 
     Place 'train.csv' and 'test.csv' in the 'csv/' directory before running.
     Expected columns: personal_best_minutes, weekly_mileage_miles, vo2_max, 
                     training_program, injury_severity, gender, marathon_weather,
